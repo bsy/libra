@@ -13,6 +13,7 @@ defmodule Libra do
       # Start the endpoint when the application starts
       supervisor(Libra.Endpoint, []),
       # Start your own worker by calling: Libra.Worker.start_link(arg1, arg2, arg3)
+      supervisor(Registry, [:unique, Registry.Page])
       # worker(Libra.Worker, [arg1, arg2, arg3]),
     ]
 

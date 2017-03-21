@@ -2,16 +2,21 @@ defmodule Libra.Inspect.Worker do
   use GenServer
   alias Libra.{Asset, Page, Client}
 
-  def start_link(url) do
-    GenServer.start_link(__MODULE__, url)
+  def start_link(url, uuid) do
+    GenServer.start_link(__MODULE__, {url, uuid} , name: name(uuid))
   end
 
-  def get_page(pid) do
+  def get_page(pid) when is_pid(pid) do
     GenServer.call(pid, :get_page)
   end
 
-  def init(url) do
-      page = %Page{url: url}
+  def get_page(uuid) do
+    GenServer.call(name(uuid), :get_page)
+  end
+
+
+  def init({url, uuid}) do
+      page = %Page{id: uuid, url: url}
       GenServer.cast(self(), :inspect_page)
       {:ok, page}
   end
@@ -63,6 +68,10 @@ defmodule Libra.Inspect.Worker do
     _error ->
       %{asset | status: :failed}
     end
+  end
+
+  defp name(uuid) do
+    {:via, Registry, {Registry.Page, uuid}}
   end
 
 end

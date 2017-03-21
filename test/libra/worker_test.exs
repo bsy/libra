@@ -5,13 +5,21 @@ defmodule Libra.Inspect.WorkerTest do
 
   describe "fetches a url" do
     setup do
-      {:ok, worker} = Worker.start_link("http://localhost:4001")
-      {:ok, worker: worker}
+      uuid = Ecto.UUID.generate()
+      {:ok, worker} = Worker.start_link("http://localhost:4001", uuid)
+      {:ok, worker: worker, uuid: uuid}
     end
 
     test "read a page", %{worker: worker} do
       page = Worker.get_page(worker)
 
+      assert(page.url == "http://localhost:4001")
+      assert(page.size > 0)
+    end
+
+    test "read a page by uuid", %{uuid: uuid} do
+      page = Worker.get_page(uuid)
+      assert page.id === uuid  
       assert(page.url == "http://localhost:4001")
       assert(page.size > 0)
     end
@@ -32,6 +40,9 @@ defmodule Libra.Inspect.WorkerTest do
       assert Enum.all?(page.assets, fn(asset) ->
         asset.status == :fetched
       end)
+
+
+
     end
 
 
