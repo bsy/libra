@@ -19,7 +19,7 @@ defmodule Libra.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :new
-    resources "/pages", PageController, only: [:create, :show]
+    resources "/pages", PageController, only: [:create, :show, :delete]
   end
 
   # Other scopes may use custom stacks.

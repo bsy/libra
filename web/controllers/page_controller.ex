@@ -2,6 +2,9 @@ defmodule Libra.PageController do
   use Libra.Web, :controller
 
   alias Libra.Command
+  alias Libra.Repo
+  alias Libra.Page
+  alias Libra.Endpoint
 
   def new(conn, _params) do
     render(conn, "new.html")
@@ -21,8 +24,19 @@ defmodule Libra.PageController do
     end
   end
 
+  def delete(conn, %{"id" => page_id}) do
+    page = Repo.get!(Libra.Page, page_id)
+    |> Repo.delete!
+
+    Endpoint.broadcast("page:" <> page_id, "page-update", %Page{})
+
+    conn
+    |> put_flash(:info, "Delete done!")
+    |> redirect(to: page_path(conn, :new))
+  end
+
   def show(conn, %{"id" => page_id}) do
-    page = Libra.Repo.get!(Libra.Page, page_id)
+    page = Repo.get!(Libra.Page, page_id)
     render(conn, "show.html", page: page)
   end
 end
