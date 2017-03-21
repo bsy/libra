@@ -4,12 +4,40 @@ defmodule Libra.Inspect.WorkerTest do
   alias Libra.Inspect.Worker
 
   describe "fetches a url" do
-    test "read a page" do
-      {:ok, pid} = Worker.start_link("http://localhost:4001")
+    setup do
+      {:ok, worker} = Worker.start_link("http://localhost:4001")
+      {:ok, worker: worker}
+    end
 
-      page = Worker.get_page(pid)
+    test "read a page", %{worker: worker} do
+      page = Worker.get_page(worker)
+
       assert(page.url == "http://localhost:4001")
       assert(page.size > 0)
     end
+
+    test "parses assets", %{worker: worker} do
+      page = Worker.get_page(worker)
+
+      assert length(page.assets) >= 2
+      assert Enum.all?(page.assets, fn(asset) ->
+        asset.status == :unfetched
+      end)
+    end
+
+    test "weight resources", %{worker: worker} do
+      Process.sleep(2500)
+      page = Worker.get_page(worker)
+
+      assert Enum.all?(page.assets, fn(asset) ->
+        asset.status == :fetched
+      end)
+    end
+
+
+
   end
+
+
+
 end

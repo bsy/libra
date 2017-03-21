@@ -28,12 +28,22 @@ defmodule Libra.Inspect.Worker do
                         assets: build_assets(result, page.url),
                         inserted_at: Ecto.DateTime.utc(),
                         updated_at: Ecto.DateTime.utc()}
+        GenServer.cast(self(), :weigh_resources)
         {:noreply, page}
       _error ->
         {:stop, :error_fetching_url}
     end
-
   end
+
+  def handle_cast(:weigh_resources, page) do
+    assets = page.assets
+             |> Enum.map(fn(asset) -> weigh_asset(asset) end)
+
+    page = %{page | assets: assets,
+                    updated_at: Ecto.DateTime.utc()}
+    {:noreply, page}
+  end
+
 
   defp build_assets(result, url) do
     (result.stylesheets ++ result.scripts)
@@ -43,6 +53,16 @@ defmodule Libra.Inspect.Worker do
              url: asset_url,
              status: :unfetched}
     end)
+  end
+
+  defp weigh_asset(asset) do
+    case Client.weigh_resource(asset.url) do
+      {:ok, size} ->
+         %{asset | size: size,
+                   status: :fetched}
+    _error ->
+      %{asset | status: :failed}
+    end
   end
 
 end
