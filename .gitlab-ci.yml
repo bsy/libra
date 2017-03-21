@@ -1,0 +1,31 @@
+image: marcelocg/phoenix:latest
+
+cache:
+  paths:
+    - _build/
+    - deps/
+
+services:
+  - postgres:latest
+
+variables:
+  POSTGRES_DB: libra_test
+  POSTGRES_USER: postgres
+  POSTGRES_PASSWORD: postgres
+
+before_script:
+  - sudo apt-get update
+  - sudo apt-get install -y unzip build-essential esl-erlang elixir
+  - mix local.hex --force
+  - mix local.rebar --force
+  - mix deps.get
+  - npm install
+  - node_modules/.bin/brunch build --production
+  - mkdir -p tmp/phantomjs
+  - curl -L https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2 | tar -xj --strip-components=1 -C tmp/phantomjs
+  - mv tmp/phantomjs/bin/phantomjs /usr/local/bin
+  - chmod +x /usr/local/bin/phantomjs
+
+mix:
+  script:
+  - PG_HOST=postgres mix coveralls

@@ -1,0 +1,1442 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install' ]
+2 info using npm@3.10.10
+3 info using node@v6.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData brunch
+20 silly mapToRegistry name brunch
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry data Result {
+23 silly mapToRegistry   raw: 'brunch',
+23 silly mapToRegistry   scope: null,
+23 silly mapToRegistry   escapedName: 'brunch',
+23 silly mapToRegistry   name: 'brunch',
+23 silly mapToRegistry   rawSpec: '',
+23 silly mapToRegistry   spec: 'latest',
+23 silly mapToRegistry   type: 'tag' }
+24 silly mapToRegistry uri https://registry.npmjs.org/brunch
+25 verbose request uri https://registry.npmjs.org/brunch
+26 verbose request no auth needed
+27 info attempt registry request try #1 at 4:27:22 PM
+28 verbose request id cb0c5e463d516852
+29 verbose etag W/"58c9d59d-46233"
+30 verbose lastModified Thu, 16 Mar 2017 00:00:29 GMT
+31 http request GET https://registry.npmjs.org/brunch
+32 http 304 https://registry.npmjs.org/brunch
+33 verbose headers { date: 'Tue, 21 Mar 2017 16:27:23 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   'cache-control': 'max-age=300',
+33 verbose headers   etag: 'W/"58c9d59d-46233"',
+33 verbose headers   age: '164',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'x-served-by': 'cache-sjc3646-SJC',
+33 verbose headers   'x-cache': 'HIT',
+33 verbose headers   'x-cache-hits': '1',
+33 verbose headers   'x-timer': 'S1490113643.298096,VS0,VE1',
+33 verbose headers   vary: 'Accept-Encoding' }
+34 silly get cb [ 304,
+34 silly get   { date: 'Tue, 21 Mar 2017 16:27:23 GMT',
+34 silly get     via: '1.1 varnish',
+34 silly get     'cache-control': 'max-age=300',
+34 silly get     etag: 'W/"58c9d59d-46233"',
+34 silly get     age: '164',
+34 silly get     connection: 'keep-alive',
+34 silly get     'x-served-by': 'cache-sjc3646-SJC',
+34 silly get     'x-cache': 'HIT',
+34 silly get     'x-cache-hits': '1',
+34 silly get     'x-timer': 'S1490113643.298096,VS0,VE1',
+34 silly get     vary: 'Accept-Encoding' } ]
+35 verbose etag https://registry.npmjs.org/brunch from cache
+36 verbose get saving brunch to /home/vagrant/.npm/registry.npmjs.org/brunch/.cache.json
+37 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+38 silly resolveWithNewModule brunch@2.7.4 checking installable status
+39 silly cache add args [ 'brunch@2.7.4', null ]
+40 verbose cache add spec brunch@2.7.4
+41 silly cache add parsed spec Result {
+41 silly cache add   raw: 'brunch@2.7.4',
+41 silly cache add   scope: null,
+41 silly cache add   escapedName: 'brunch',
+41 silly cache add   name: 'brunch',
+41 silly cache add   rawSpec: '2.7.4',
+41 silly cache add   spec: '2.7.4',
+41 silly cache add   type: 'version' }
+42 silly addNamed brunch@2.7.4
+43 verbose addNamed "2.7.4" is a plain semver version for brunch
+44 silly mapToRegistry name brunch
+45 silly mapToRegistry using default registry
+46 silly mapToRegistry registry https://registry.npmjs.org/
+47 silly mapToRegistry data Result {
+47 silly mapToRegistry   raw: 'brunch',
+47 silly mapToRegistry   scope: null,
+47 silly mapToRegistry   escapedName: 'brunch',
+47 silly mapToRegistry   name: 'brunch',
+47 silly mapToRegistry   rawSpec: '',
+47 silly mapToRegistry   spec: 'latest',
+47 silly mapToRegistry   type: 'tag' }
+48 silly mapToRegistry uri https://registry.npmjs.org/brunch
+49 verbose addNameVersion registry:https://registry.npmjs.org/brunch not in flight; fetching
+50 verbose get https://registry.npmjs.org/brunch not expired, no request
+51 silly cache afterAdd brunch@2.7.4
+52 verbose afterAdd /home/vagrant/.npm/brunch/2.7.4/package/package.json not in flight; writing
+53 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+54 verbose afterAdd /home/vagrant/.npm/brunch/2.7.4/package/package.json written
+55 silly fetchNamedPackageData coffee-script
+56 silly mapToRegistry name coffee-script
+57 silly mapToRegistry using default registry
+58 silly mapToRegistry registry https://registry.npmjs.org/
+59 silly mapToRegistry data Result {
+59 silly mapToRegistry   raw: 'coffee-script',
+59 silly mapToRegistry   scope: null,
+59 silly mapToRegistry   escapedName: 'coffee-script',
+59 silly mapToRegistry   name: 'coffee-script',
+59 silly mapToRegistry   rawSpec: '',
+59 silly mapToRegistry   spec: 'latest',
+59 silly mapToRegistry   type: 'tag' }
+60 silly mapToRegistry uri https://registry.npmjs.org/coffee-script
+61 silly fetchNamedPackageData debug
+62 silly mapToRegistry name debug
+63 silly mapToRegistry using default registry
+64 silly mapToRegistry registry https://registry.npmjs.org/
+65 silly mapToRegistry data Result {
+65 silly mapToRegistry   raw: 'debug',
+65 silly mapToRegistry   scope: null,
+65 silly mapToRegistry   escapedName: 'debug',
+65 silly mapToRegistry   name: 'debug',
+65 silly mapToRegistry   rawSpec: '',
+65 silly mapToRegistry   spec: 'latest',
+65 silly mapToRegistry   type: 'tag' }
+66 silly mapToRegistry uri https://registry.npmjs.org/debug
+67 verbose request uri https://registry.npmjs.org/coffee-script
+68 verbose request no auth needed
+69 info attempt registry request try #1 at 4:27:23 PM
+70 verbose etag W/"58c2cdb3-d217"
+71 verbose lastModified Fri, 10 Mar 2017 16:00:51 GMT
+72 http request GET https://registry.npmjs.org/coffee-script
+73 verbose request uri https://registry.npmjs.org/debug
+74 verbose request no auth needed
+75 info attempt registry request try #1 at 4:27:23 PM
+76 verbose etag W/"58cbbd7a-139cf"
+77 verbose lastModified Fri, 17 Mar 2017 10:42:02 GMT
+78 http request GET https://registry.npmjs.org/debug
+79 http 304 https://registry.npmjs.org/coffee-script
+80 verbose headers { date: 'Tue, 21 Mar 2017 16:27:23 GMT',
+80 verbose headers   via: '1.1 varnish',
+80 verbose headers   'cache-control': 'max-age=300',
+80 verbose headers   etag: 'W/"58c2cdb3-d217"',
+80 verbose headers   age: '203',
+80 verbose headers   connection: 'keep-alive',
+80 verbose headers   'x-served-by': 'cache-sjc3646-SJC',
+80 verbose headers   'x-cache': 'HIT',
+80 verbose headers   'x-cache-hits': '3',
+80 verbose headers   'x-timer': 'S1490113643.588872,VS0,VE0',
+80 verbose headers   vary: 'Accept-Encoding' }
+81 silly get cb [ 304,
+81 silly get   { date: 'Tue, 21 Mar 2017 16:27:23 GMT',
+81 silly get     via: '1.1 varnish',
+81 silly get     'cache-control': 'max-age=300',
+81 silly get     etag: 'W/"58c2cdb3-d217"',
+81 silly get     age: '203',
+81 silly get     connection: 'keep-alive',
+81 silly get     'x-served-by': 'cache-sjc3646-SJC',
+81 silly get     'x-cache': 'HIT',
+81 silly get     'x-cache-hits': '3',
+81 silly get     'x-timer': 'S1490113643.588872,VS0,VE0',
+81 silly get     vary: 'Accept-Encoding' } ]
+82 verbose etag https://registry.npmjs.org/coffee-script from cache
+83 verbose get saving coffee-script to /home/vagrant/.npm/registry.npmjs.org/coffee-script/.cache.json
+84 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+85 silly resolveWithNewModule coffee-script@1.10.0 checking installable status
+86 silly cache add args [ 'coffee-script@~1.10.0', null ]
+87 verbose cache add spec coffee-script@~1.10.0
+88 silly cache add parsed spec Result {
+88 silly cache add   raw: 'coffee-script@~1.10.0',
+88 silly cache add   scope: null,
+88 silly cache add   escapedName: 'coffee-script',
+88 silly cache add   name: 'coffee-script',
+88 silly cache add   rawSpec: '~1.10.0',
+88 silly cache add   spec: '>=1.10.0 <1.11.0',
+88 silly cache add   type: 'range' }
+89 silly addNamed coffee-script@>=1.10.0 <1.11.0
+90 verbose addNamed ">=1.10.0 <1.11.0" is a valid semver range for coffee-script
+91 silly addNameRange { name: 'coffee-script',
+91 silly addNameRange   range: '>=1.10.0 <1.11.0',
+91 silly addNameRange   hasData: false }
+92 silly mapToRegistry name coffee-script
+93 silly mapToRegistry using default registry
+94 silly mapToRegistry registry https://registry.npmjs.org/
+95 silly mapToRegistry data Result {
+95 silly mapToRegistry   raw: 'coffee-script',
+95 silly mapToRegistry   scope: null,
+95 silly mapToRegistry   escapedName: 'coffee-script',
+95 silly mapToRegistry   name: 'coffee-script',
+95 silly mapToRegistry   rawSpec: '',
+95 silly mapToRegistry   spec: 'latest',
+95 silly mapToRegistry   type: 'tag' }
+96 silly mapToRegistry uri https://registry.npmjs.org/coffee-script
+97 verbose addNameRange registry:https://registry.npmjs.org/coffee-script not in flight; fetching
+98 verbose get https://registry.npmjs.org/coffee-script not expired, no request
+99 silly addNameRange number 2 { name: 'coffee-script',
+99 silly addNameRange   range: '>=1.10.0 <1.11.0',
+99 silly addNameRange   hasData: true }
+100 silly addNameRange versions [ 'coffee-script',
+100 silly addNameRange   [ '0.7.0',
+100 silly addNameRange     '0.7.1',
+100 silly addNameRange     '0.7.2',
+100 silly addNameRange     '0.9.0',
+100 silly addNameRange     '0.9.1',
+100 silly addNameRange     '0.9.2',
+100 silly addNameRange     '0.9.3',
+100 silly addNameRange     '0.9.4',
+100 silly addNameRange     '0.9.5',
+100 silly addNameRange     '0.9.6',
+100 silly addNameRange     '1.0.0',
+100 silly addNameRange     '1.0.1',
+100 silly addNameRange     '1.1.0',
+100 silly addNameRange     '1.1.1',
+100 silly addNameRange     '1.1.2',
+100 silly addNameRange     '1.1.3',
+100 silly addNameRange     '1.2.0',
+100 silly addNameRange     '1.3.0',
+100 silly addNameRange     '1.3.1',
+100 silly addNameRange     '1.3.2',
+100 silly addNameRange     '1.3.3',
+100 silly addNameRange     '1.4.0',
+100 silly addNameRange     '1.5.0',
+100 silly addNameRange     '1.6.0',
+100 silly addNameRange     '1.6.1',
+100 silly addNameRange     '1.6.2',
+100 silly addNameRange     '1.6.3',
+100 silly addNameRange     '1.7.0',
+100 silly addNameRange     '1.7.1',
+100 silly addNameRange     '1.8.0',
+100 silly addNameRange     '1.9.0',
+100 silly addNameRange     '1.9.1',
+100 silly addNameRange     '1.9.2',
+100 silly addNameRange     '1.9.3',
+100 silly addNameRange     '1.10.0',
+100 silly addNameRange     '1.11.0',
+100 silly addNameRange     '1.11.1',
+100 silly addNameRange     '1.12.0',
+100 silly addNameRange     '1.12.1',
+100 silly addNameRange     '1.12.2',
+100 silly addNameRange     '1.12.3',
+100 silly addNameRange     '1.12.4' ] ]
+101 silly addNamed coffee-script@1.10.0
+102 verbose addNamed "1.10.0" is a plain semver version for coffee-script
+103 silly cache afterAdd coffee-script@1.10.0
+104 verbose afterAdd /home/vagrant/.npm/coffee-script/1.10.0/package/package.json not in flight; writing
+105 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+106 verbose afterAdd /home/vagrant/.npm/coffee-script/1.10.0/package/package.json written
+107 http 304 https://registry.npmjs.org/debug
+108 verbose headers { date: 'Tue, 21 Mar 2017 16:27:23 GMT',
+108 verbose headers   via: '1.1 varnish',
+108 verbose headers   'cache-control': 'max-age=300',
+108 verbose headers   etag: 'W/"58cbbd7a-139cf"',
+108 verbose headers   age: '88',
+108 verbose headers   connection: 'keep-alive',
+108 verbose headers   'x-served-by': 'cache-sjc3651-SJC',
+108 verbose headers   'x-cache': 'HIT',
+108 verbose headers   'x-cache-hits': '9',
+108 verbose headers   'x-timer': 'S1490113643.781201,VS0,VE0',
+108 verbose headers   vary: 'Accept-Encoding' }
+109 silly get cb [ 304,
+109 silly get   { date: 'Tue, 21 Mar 2017 16:27:23 GMT',
+109 silly get     via: '1.1 varnish',
+109 silly get     'cache-control': 'max-age=300',
+109 silly get     etag: 'W/"58cbbd7a-139cf"',
+109 silly get     age: '88',
+109 silly get     connection: 'keep-alive',
+109 silly get     'x-served-by': 'cache-sjc3651-SJC',
+109 silly get     'x-cache': 'HIT',
+109 silly get     'x-cache-hits': '9',
+109 silly get     'x-timer': 'S1490113643.781201,VS0,VE0',
+109 silly get     vary: 'Accept-Encoding' } ]
+110 verbose etag https://registry.npmjs.org/debug from cache
+111 verbose get saving debug to /home/vagrant/.npm/registry.npmjs.org/debug/.cache.json
+112 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+113 silly resolveWithNewModule debug@2.2.0 checking installable status
+114 silly cache add args [ 'debug@~2.2.0', null ]
+115 verbose cache add spec debug@~2.2.0
+116 silly cache add parsed spec Result {
+116 silly cache add   raw: 'debug@~2.2.0',
+116 silly cache add   scope: null,
+116 silly cache add   escapedName: 'debug',
+116 silly cache add   name: 'debug',
+116 silly cache add   rawSpec: '~2.2.0',
+116 silly cache add   spec: '>=2.2.0 <2.3.0',
+116 silly cache add   type: 'range' }
+117 silly addNamed debug@>=2.2.0 <2.3.0
+118 verbose addNamed ">=2.2.0 <2.3.0" is a valid semver range for debug
+119 silly addNameRange { name: 'debug', range: '>=2.2.0 <2.3.0', hasData: false }
+120 silly mapToRegistry name debug
+121 silly mapToRegistry using default registry
+122 silly mapToRegistry registry https://registry.npmjs.org/
+123 silly mapToRegistry data Result {
+123 silly mapToRegistry   raw: 'debug',
+123 silly mapToRegistry   scope: null,
+123 silly mapToRegistry   escapedName: 'debug',
+123 silly mapToRegistry   name: 'debug',
+123 silly mapToRegistry   rawSpec: '',
+123 silly mapToRegistry   spec: 'latest',
+123 silly mapToRegistry   type: 'tag' }
+124 silly mapToRegistry uri https://registry.npmjs.org/debug
+125 verbose addNameRange registry:https://registry.npmjs.org/debug not in flight; fetching
+126 verbose get https://registry.npmjs.org/debug not expired, no request
+127 silly addNameRange number 2 { name: 'debug', range: '>=2.2.0 <2.3.0', hasData: true }
+128 silly addNameRange versions [ 'debug',
+128 silly addNameRange   [ '0.0.1',
+128 silly addNameRange     '0.1.0',
+128 silly addNameRange     '0.2.0',
+128 silly addNameRange     '0.3.0',
+128 silly addNameRange     '0.4.0',
+128 silly addNameRange     '0.4.1',
+128 silly addNameRange     '0.5.0',
+128 silly addNameRange     '0.6.0',
+128 silly addNameRange     '0.7.0',
+128 silly addNameRange     '0.7.1',
+128 silly addNameRange     '0.7.2',
+128 silly addNameRange     '0.7.3',
+128 silly addNameRange     '0.7.4',
+128 silly addNameRange     '0.8.0',
+128 silly addNameRange     '0.8.1',
+128 silly addNameRange     '1.0.0',
+128 silly addNameRange     '1.0.1',
+128 silly addNameRange     '1.0.2',
+128 silly addNameRange     '1.0.3',
+128 silly addNameRange     '1.0.4',
+128 silly addNameRange     '2.0.0',
+128 silly addNameRange     '2.1.0',
+128 silly addNameRange     '2.1.1',
+128 silly addNameRange     '2.1.2',
+128 silly addNameRange     '2.1.3',
+128 silly addNameRange     '2.2.0',
+128 silly addNameRange     '2.3.0',
+128 silly addNameRange     '2.3.1',
+128 silly addNameRange     '2.3.2',
+128 silly addNameRange     '2.3.3',
+128 silly addNameRange     '2.4.0',
+128 silly addNameRange     '2.4.1',
+128 silly addNameRange     '2.4.2',
+128 silly addNameRange     '2.4.3',
+128 silly addNameRange     '2.4.4',
+128 silly addNameRange     '2.4.5',
+128 silly addNameRange     '2.5.0',
+128 silly addNameRange     '2.5.1',
+128 silly addNameRange     '2.5.2',
+128 silly addNameRange     '2.6.0',
+128 silly addNameRange     '2.6.1',
+128 silly addNameRange     '2.6.2',
+128 silly addNameRange     '2.6.3' ] ]
+129 silly addNamed debug@2.2.0
+130 verbose addNamed "2.2.0" is a plain semver version for debug
+131 silly cache afterAdd debug@2.2.0
+132 verbose afterAdd /home/vagrant/.npm/debug/2.2.0/package/package.json not in flight; writing
+133 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+134 verbose afterAdd /home/vagrant/.npm/debug/2.2.0/package/package.json written
+135 silly fetchNamedPackageData fsevents
+136 silly mapToRegistry name fsevents
+137 silly mapToRegistry using default registry
+138 silly mapToRegistry registry https://registry.npmjs.org/
+139 silly mapToRegistry data Result {
+139 silly mapToRegistry   raw: 'fsevents',
+139 silly mapToRegistry   scope: null,
+139 silly mapToRegistry   escapedName: 'fsevents',
+139 silly mapToRegistry   name: 'fsevents',
+139 silly mapToRegistry   rawSpec: '',
+139 silly mapToRegistry   spec: 'latest',
+139 silly mapToRegistry   type: 'tag' }
+140 silly mapToRegistry uri https://registry.npmjs.org/fsevents
+141 verbose request uri https://registry.npmjs.org/fsevents
+142 verbose request no auth needed
+143 info attempt registry request try #1 at 4:27:23 PM
+144 verbose etag W/"58cbe1d5-d5e6"
+145 verbose lastModified Fri, 17 Mar 2017 13:17:09 GMT
+146 http request GET https://registry.npmjs.org/fsevents
+147 http 304 https://registry.npmjs.org/fsevents
+148 verbose headers { date: 'Tue, 21 Mar 2017 16:27:23 GMT',
+148 verbose headers   via: '1.1 varnish',
+148 verbose headers   'cache-control': 'max-age=300',
+148 verbose headers   etag: 'W/"58cbe1d5-d5e6"',
+148 verbose headers   age: '92',
+148 verbose headers   connection: 'keep-alive',
+148 verbose headers   'x-served-by': 'cache-sjc3646-SJC',
+148 verbose headers   'x-cache': 'HIT',
+148 verbose headers   'x-cache-hits': '6',
+148 verbose headers   'x-timer': 'S1490113643.903849,VS0,VE0',
+148 verbose headers   vary: 'Accept-Encoding' }
+149 silly get cb [ 304,
+149 silly get   { date: 'Tue, 21 Mar 2017 16:27:23 GMT',
+149 silly get     via: '1.1 varnish',
+149 silly get     'cache-control': 'max-age=300',
+149 silly get     etag: 'W/"58cbe1d5-d5e6"',
+149 silly get     age: '92',
+149 silly get     connection: 'keep-alive',
+149 silly get     'x-served-by': 'cache-sjc3646-SJC',
+149 silly get     'x-cache': 'HIT',
+149 silly get     'x-cache-hits': '6',
+149 silly get     'x-timer': 'S1490113643.903849,VS0,VE0',
+149 silly get     vary: 'Accept-Encoding' } ]
+150 verbose etag https://registry.npmjs.org/fsevents from cache
+151 verbose get saving fsevents to /home/vagrant/.npm/registry.npmjs.org/fsevents/.cache.json
+152 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+153 silly resolveWithNewModule fsevents@1.1.1 checking installable status
+154 silly fetchNamedPackageData ms
+155 silly mapToRegistry name ms
+156 silly mapToRegistry using default registry
+157 silly mapToRegistry registry https://registry.npmjs.org/
+158 silly mapToRegistry data Result {
+158 silly mapToRegistry   raw: 'ms',
+158 silly mapToRegistry   scope: null,
+158 silly mapToRegistry   escapedName: 'ms',
+158 silly mapToRegistry   name: 'ms',
+158 silly mapToRegistry   rawSpec: '',
+158 silly mapToRegistry   spec: 'latest',
+158 silly mapToRegistry   type: 'tag' }
+159 silly mapToRegistry uri https://registry.npmjs.org/ms
+160 verbose request uri https://registry.npmjs.org/ms
+161 verbose request no auth needed
+162 info attempt registry request try #1 at 4:27:24 PM
+163 verbose etag W/"58cefb73-35f2"
+164 verbose lastModified Sun, 19 Mar 2017 21:43:15 GMT
+165 http request GET https://registry.npmjs.org/ms
+166 http 304 https://registry.npmjs.org/ms
+167 verbose headers { date: 'Tue, 21 Mar 2017 16:27:24 GMT',
+167 verbose headers   via: '1.1 varnish',
+167 verbose headers   'cache-control': 'max-age=300',
+167 verbose headers   etag: 'W/"58cefb73-35f2"',
+167 verbose headers   age: '152',
+167 verbose headers   connection: 'keep-alive',
+167 verbose headers   'x-served-by': 'cache-sjc3651-SJC',
+167 verbose headers   'x-cache': 'HIT',
+167 verbose headers   'x-cache-hits': '3',
+167 verbose headers   'x-timer': 'S1490113644.009896,VS0,VE0',
+167 verbose headers   vary: 'Accept-Encoding' }
+168 silly get cb [ 304,
+168 silly get   { date: 'Tue, 21 Mar 2017 16:27:24 GMT',
+168 silly get     via: '1.1 varnish',
+168 silly get     'cache-control': 'max-age=300',
+168 silly get     etag: 'W/"58cefb73-35f2"',
+168 silly get     age: '152',
+168 silly get     connection: 'keep-alive',
+168 silly get     'x-served-by': 'cache-sjc3651-SJC',
+168 silly get     'x-cache': 'HIT',
+168 silly get     'x-cache-hits': '3',
+168 silly get     'x-timer': 'S1490113644.009896,VS0,VE0',
+168 silly get     vary: 'Accept-Encoding' } ]
+169 verbose etag https://registry.npmjs.org/ms from cache
+170 verbose get saving ms to /home/vagrant/.npm/registry.npmjs.org/ms/.cache.json
+171 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+172 silly resolveWithNewModule ms@0.7.1 checking installable status
+173 silly cache add args [ 'ms@0.7.1', null ]
+174 verbose cache add spec ms@0.7.1
+175 silly cache add parsed spec Result {
+175 silly cache add   raw: 'ms@0.7.1',
+175 silly cache add   scope: null,
+175 silly cache add   escapedName: 'ms',
+175 silly cache add   name: 'ms',
+175 silly cache add   rawSpec: '0.7.1',
+175 silly cache add   spec: '0.7.1',
+175 silly cache add   type: 'version' }
+176 silly addNamed ms@0.7.1
+177 verbose addNamed "0.7.1" is a plain semver version for ms
+178 silly mapToRegistry name ms
+179 silly mapToRegistry using default registry
+180 silly mapToRegistry registry https://registry.npmjs.org/
+181 silly mapToRegistry data Result {
+181 silly mapToRegistry   raw: 'ms',
+181 silly mapToRegistry   scope: null,
+181 silly mapToRegistry   escapedName: 'ms',
+181 silly mapToRegistry   name: 'ms',
+181 silly mapToRegistry   rawSpec: '',
+181 silly mapToRegistry   spec: 'latest',
+181 silly mapToRegistry   type: 'tag' }
+182 silly mapToRegistry uri https://registry.npmjs.org/ms
+183 verbose addNameVersion registry:https://registry.npmjs.org/ms not in flight; fetching
+184 verbose get https://registry.npmjs.org/ms not expired, no request
+185 silly cache afterAdd ms@0.7.1
+186 verbose afterAdd /home/vagrant/.npm/ms/0.7.1/package/package.json not in flight; writing
+187 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+188 verbose afterAdd /home/vagrant/.npm/ms/0.7.1/package/package.json written
+189 silly loadAllDepsIntoIdealTree Finishing
+190 silly loadIdealTree Finishing
+191 silly currentTree vagrant
+191 silly currentTree ├── accepts@1.3.3
+191 silly currentTree ├── acorn@4.0.11
+191 silly currentTree ├── align-text@0.1.4
+191 silly currentTree ├── amdefine@1.0.1
+191 silly currentTree ├── ansi-regex@2.1.1
+191 silly currentTree ├── ansi-styles@2.2.1
+191 silly currentTree ├── ansicolors@0.3.2
+191 silly currentTree ├── anymatch@1.3.0
+191 silly currentTree ├── anysort@1.0.1
+191 silly currentTree ├── arr-diff@2.0.0
+191 silly currentTree ├── arr-flatten@1.0.1
+191 silly currentTree ├── array-flatten@1.1.1
+191 silly currentTree ├── array-unique@0.2.1
+191 silly currentTree ├── arrify@1.0.1
+191 silly currentTree ├── asn1.js@4.9.1
+191 silly currentTree ├── assert@1.3.0
+191 silly currentTree ├── async-each@1.0.1
+191 silly currentTree ├── async@0.2.10
+191 silly currentTree ├── babel-brunch@6.0.6
+191 silly currentTree ├── babel-code-frame@6.22.0
+191 silly currentTree ├── babel-core@6.24.0
+191 silly currentTree ├── babel-generator@6.24.0
+191 silly currentTree ├── babel-helper-builder-binary-assignment-operator-visitor@6.22.0
+191 silly currentTree ├── babel-helper-call-delegate@6.22.0
+191 silly currentTree ├── babel-helper-define-map@6.23.0
+191 silly currentTree ├── babel-helper-explode-assignable-expression@6.22.0
+191 silly currentTree ├── babel-helper-function-name@6.23.0
+191 silly currentTree ├── babel-helper-get-function-arity@6.22.0
+191 silly currentTree ├── babel-helper-hoist-variables@6.22.0
+191 silly currentTree ├── babel-helper-optimise-call-expression@6.23.0
+191 silly currentTree ├── babel-helper-regex@6.22.0
+191 silly currentTree ├── babel-helper-replace-supers@6.23.0
+191 silly currentTree ├── babel-helpers@6.23.0
+191 silly currentTree ├── babel-messages@6.23.0
+191 silly currentTree ├── babel-plugin-check-es2015-constants@6.22.0
+191 silly currentTree ├── babel-plugin-syntax-exponentiation-operator@6.13.0
+191 silly currentTree ├── babel-plugin-transform-es2015-arrow-functions@6.22.0
+191 silly currentTree ├── babel-plugin-transform-es2015-block-scoped-functions@6.22.0
+191 silly currentTree ├── babel-plugin-transform-es2015-block-scoping@6.23.0
+191 silly currentTree ├── babel-plugin-transform-es2015-classes@6.23.0
+191 silly currentTree ├── babel-plugin-transform-es2015-computed-properties@6.22.0
+191 silly currentTree ├── babel-plugin-transform-es2015-destructuring@6.23.0
+191 silly currentTree ├── babel-plugin-transform-es2015-duplicate-keys@6.22.0
+191 silly currentTree ├── babel-plugin-transform-es2015-for-of@6.23.0
+191 silly currentTree ├── babel-plugin-transform-es2015-function-name@6.22.0
+191 silly currentTree ├── babel-plugin-transform-es2015-literals@6.22.0
+191 silly currentTree ├── babel-plugin-transform-es2015-modules-amd@6.24.0
+191 silly currentTree ├── babel-plugin-transform-es2015-modules-commonjs@6.24.0
+191 silly currentTree ├── babel-plugin-transform-es2015-modules-systemjs@6.23.0
+191 silly currentTree ├── babel-plugin-transform-es2015-modules-umd@6.24.0
+191 silly currentTree ├── babel-plugin-transform-es2015-object-super@6.22.0
+191 silly currentTree ├── babel-plugin-transform-es2015-parameters@6.23.0
+191 silly currentTree ├── babel-plugin-transform-es2015-shorthand-properties@6.22.0
+191 silly currentTree ├── babel-plugin-transform-es2015-spread@6.22.0
+191 silly currentTree ├── babel-plugin-transform-es2015-sticky-regex@6.22.0
+191 silly currentTree ├── babel-plugin-transform-es2015-template-literals@6.22.0
+191 silly currentTree ├── babel-plugin-transform-es2015-typeof-symbol@6.23.0
+191 silly currentTree ├── babel-plugin-transform-es2015-unicode-regex@6.22.0
+191 silly currentTree ├── babel-plugin-transform-exponentiation-operator@6.22.0
+191 silly currentTree ├── babel-plugin-transform-regenerator@6.22.0
+191 silly currentTree ├── babel-plugin-transform-strict-mode@6.22.0
+191 silly currentTree ├── babel-preset-es2015@6.24.0
+191 silly currentTree ├── babel-preset-es2016@6.22.0
+191 silly currentTree ├── babel-register@6.24.0
+191 silly currentTree ├── babel-runtime@6.23.0
+191 silly currentTree ├── babel-template@6.23.0
+191 silly currentTree ├── babel-traverse@6.23.1
+191 silly currentTree ├── babel-types@6.23.0
+191 silly currentTree ├── babylon@6.16.1
+191 silly currentTree ├── balanced-match@0.4.2
+191 silly currentTree ├── base64-js@1.2.0
+191 silly currentTree ├── binary-extensions@1.8.0
+191 silly currentTree ├── bn.js@4.11.6
+191 silly currentTree ├── bower-config@1.4.0
+191 silly currentTree ├── brace-expansion@1.1.6
+191 silly currentTree ├── braces@1.8.5
+191 silly currentTree ├── brorand@1.1.0
+191 silly currentTree ├── browser-resolve@1.11.2
+191 silly currentTree ├── browserify-aes@1.0.6
+191 silly currentTree ├── browserify-cipher@1.0.0
+191 silly currentTree ├── browserify-des@1.0.0
+191 silly currentTree ├── browserify-rsa@4.0.1
+191 silly currentTree ├── browserify-sign@4.0.0
+191 silly currentTree ├── brunch-skeletons@0.1.5
+191 silly currentTree ├── buffer-shims@1.0.0
+191 silly currentTree ├── buffer-xor@1.0.3
+191 silly currentTree ├── buffer@4.3.1
+191 silly currentTree ├── builtin-status-codes@2.0.0
+191 silly currentTree ├── camelcase@1.2.1
+191 silly currentTree ├── center-align@0.1.3
+191 silly currentTree ├── chalk@1.1.3
+191 silly currentTree ├─┬ check-dependencies@0.12.3
+191 silly currentTree │ └── minimist@1.2.0
+191 silly currentTree ├── chokidar@1.4.3
+191 silly currentTree ├── cipher-base@1.0.3
+191 silly currentTree ├── clean-css-brunch@2.0.0
+191 silly currentTree ├─┬ clean-css@3.4.25
+191 silly currentTree │ ├── commander@2.8.1
+191 silly currentTree │ └── source-map@0.4.4
+191 silly currentTree ├─┬ cliui@2.1.0
+191 silly currentTree │ └── wordwrap@0.0.2
+191 silly currentTree ├── commander@2.9.0
+191 silly currentTree ├── commonjs-require-definition@0.5.0
+191 silly currentTree ├── concat-map@0.0.1
+191 silly currentTree ├── connect-slashes@1.3.1
+191 silly currentTree ├── content-disposition@0.5.2
+191 silly currentTree ├── content-type@1.0.2
+191 silly currentTree ├── convert-source-map@1.4.0
+191 silly currentTree ├── cookie-signature@1.0.6
+191 silly currentTree ├── cookie@0.3.1
+191 silly currentTree ├── core-js@2.4.1
+191 silly currentTree ├── core-util-is@1.0.2
+191 silly currentTree ├── create-ecdh@4.0.0
+191 silly currentTree ├── create-hash@1.1.2
+191 silly currentTree ├── create-hmac@1.1.4
+191 silly currentTree ├── crypto-browserify@3.11.0
+191 silly currentTree ├── css-brunch@2.0.0
+191 silly currentTree ├── debug@2.6.3
+191 silly currentTree ├── decamelize@1.2.0
+191 silly currentTree ├── deep-assign@2.0.0
+191 silly currentTree ├── defined@1.0.0
+191 silly currentTree ├── depd@1.1.0
+191 silly currentTree ├── deppack@0.4.4
+191 silly currentTree ├── des.js@1.0.0
+191 silly currentTree ├── destroy@1.0.4
+191 silly currentTree ├── detect-file@0.1.0
+191 silly currentTree ├── detect-indent@4.0.0
+191 silly currentTree ├── detective@4.5.0
+191 silly currentTree ├── diffie-hellman@5.0.2
+191 silly currentTree ├── domain-browser@1.1.7
+191 silly currentTree ├── ee-first@1.1.1
+191 silly currentTree ├── elliptic@6.4.0
+191 silly currentTree ├── encodeurl@1.0.1
+191 silly currentTree ├── escape-html@1.0.3
+191 silly currentTree ├── escape-string-regexp@1.0.5
+191 silly currentTree ├── esprima@2.7.3
+191 silly currentTree ├── esutils@2.0.2
+191 silly currentTree ├── etag@1.8.0
+191 silly currentTree ├── events@1.1.1
+191 silly currentTree ├── evp_bytestokey@1.0.0
+191 silly currentTree ├── expand-brackets@0.1.5
+191 silly currentTree ├── expand-range@1.8.2
+191 silly currentTree ├── expand-tilde@1.2.2
+191 silly currentTree ├─┬ express@4.15.2
+191 silly currentTree │ └── debug@2.6.1
+191 silly currentTree ├── extglob@0.3.2
+191 silly currentTree ├── fast-levenshtein@1.1.4
+191 silly currentTree ├── fcache@0.1.1
+191 silly currentTree ├── filename-regex@2.0.0
+191 silly currentTree ├── fill-range@2.2.3
+191 silly currentTree ├─┬ finalhandler@1.0.0
+191 silly currentTree │ └── debug@2.6.1
+191 silly currentTree ├── findup-sync@0.4.3
+191 silly currentTree ├── for-in@1.0.2
+191 silly currentTree ├── for-own@0.1.5
+191 silly currentTree ├── forwarded@0.1.0
+191 silly currentTree ├── fresh@0.5.0
+191 silly currentTree ├── fs-exists-sync@0.1.0
+191 silly currentTree ├── fs.realpath@1.0.0
+191 silly currentTree ├── glob-base@0.3.0
+191 silly currentTree ├── glob-parent@2.0.0
+191 silly currentTree ├── glob@7.1.1
+191 silly currentTree ├── global-modules@0.2.3
+191 silly currentTree ├── global-prefix@0.1.5
+191 silly currentTree ├── globals@9.16.0
+191 silly currentTree ├── graceful-fs@4.1.11
+191 silly currentTree ├── graceful-readlink@1.0.1
+191 silly currentTree ├── growl@1.8.1
+191 silly currentTree ├── has-ansi@2.0.0
+191 silly currentTree ├── hash.js@1.0.3
+191 silly currentTree ├── hmac-drbg@1.0.0
+191 silly currentTree ├── home-or-tmp@2.0.0
+191 silly currentTree ├── homedir-polyfill@1.0.1
+191 silly currentTree ├── hosted-git-info@2.1.5
+191 silly currentTree ├── http-errors@1.6.1
+191 silly currentTree ├── https-browserify@0.0.1
+191 silly currentTree ├── ieee754@1.1.8
+191 silly currentTree ├── indexof@0.0.1
+191 silly currentTree ├── inflight@1.0.6
+191 silly currentTree ├── inherits@2.0.3
+191 silly currentTree ├── ini@1.3.4
+191 silly currentTree ├── init-skeleton@0.9.5
+191 silly currentTree ├── invariant@2.2.2
+191 silly currentTree ├── ipaddr.js@1.2.0
+191 silly currentTree ├── is-binary-path@1.0.1
+191 silly currentTree ├── is-buffer@1.1.5
+191 silly currentTree ├── is-dotfile@1.0.2
+191 silly currentTree ├── is-equal-shallow@0.1.3
+191 silly currentTree ├── is-extendable@0.1.1
+191 silly currentTree ├── is-extglob@1.0.0
+191 silly currentTree ├── is-finite@1.0.2
+191 silly currentTree ├── is-glob@2.0.1
+191 silly currentTree ├── is-number@2.1.0
+191 silly currentTree ├── is-obj@1.0.1
+191 silly currentTree ├── is-posix-bracket@0.1.1
+191 silly currentTree ├── is-primitive@2.0.0
+191 silly currentTree ├── is-windows@0.2.0
+191 silly currentTree ├── isarray@1.0.0
+191 silly currentTree ├── isexe@1.1.2
+191 silly currentTree ├── isobject@2.1.0
+191 silly currentTree ├── javascript-brunch@2.0.0
+191 silly currentTree ├── js-tokens@3.0.1
+191 silly currentTree ├── jsesc@1.3.0
+191 silly currentTree ├── json5@0.5.1
+191 silly currentTree ├── kind-of@3.1.0
+191 silly currentTree ├── lazy-cache@1.0.4
+191 silly currentTree ├── lodash@4.17.4
+191 silly currentTree ├── loggy@0.3.5
+191 silly currentTree ├── longest@1.0.1
+191 silly currentTree ├── loose-envify@1.3.1
+191 silly currentTree ├── media-typer@0.3.0
+191 silly currentTree ├── merge-descriptors@1.0.1
+191 silly currentTree ├── methods@1.1.2
+191 silly currentTree ├── micro-promisify@0.1.1
+191 silly currentTree ├── micromatch@2.3.11
+191 silly currentTree ├── miller-rabin@4.0.0
+191 silly currentTree ├── mime-db@1.26.0
+191 silly currentTree ├── mime-types@2.1.14
+191 silly currentTree ├── mime@1.3.4
+191 silly currentTree ├── minimalistic-assert@1.0.0
+191 silly currentTree ├── minimalistic-crypto-utils@1.0.1
+191 silly currentTree ├── minimatch@3.0.3
+191 silly currentTree ├── minimist@0.0.8
+191 silly currentTree ├── mkdirp@0.5.1
+191 silly currentTree ├── mout@1.0.0
+191 silly currentTree ├── ms@0.7.2
+191 silly currentTree ├── ncp@2.0.0
+191 silly currentTree ├── negotiator@0.6.1
+191 silly currentTree ├─┬ node-browser-modules@0.1.0
+191 silly currentTree │ └── readable-stream@2.0.6
+191 silly currentTree ├── normalize-git-url@3.0.2
+191 silly currentTree ├── normalize-path@2.0.1
+191 silly currentTree ├── number-is-nan@1.0.1
+191 silly currentTree ├── object.omit@2.0.1
+191 silly currentTree ├── on-finished@2.3.0
+191 silly currentTree ├── once@1.4.0
+191 silly currentTree ├── optimist@0.6.1
+191 silly currentTree ├── os-browserify@0.2.1
+191 silly currentTree ├── os-homedir@1.0.2
+191 silly currentTree ├── os-tmpdir@1.0.2
+191 silly currentTree ├── osenv@0.1.4
+191 silly currentTree ├── parse-asn1@5.1.0
+191 silly currentTree ├── parse-glob@3.0.4
+191 silly currentTree ├── parse-passwd@1.0.0
+191 silly currentTree ├── parseurl@1.3.1
+191 silly currentTree ├── path-browserify@0.0.0
+191 silly currentTree ├── path-is-absolute@1.0.1
+191 silly currentTree ├── path-to-regexp@0.1.7
+191 silly currentTree ├── pbkdf2@3.0.9
+191 silly currentTree ├── phoenix_html@2.9.2
+191 silly currentTree ├── phoenix@1.2.1
+191 silly currentTree ├── preserve@0.2.0
+191 silly currentTree ├── private@0.1.7
+191 silly currentTree ├── process-nextick-args@1.0.7
+191 silly currentTree ├── process@0.11.9
+191 silly currentTree ├── proxy-addr@1.1.3
+191 silly currentTree ├── public-encrypt@4.0.0
+191 silly currentTree ├── punycode@1.4.1
+191 silly currentTree ├── pushserve@1.0.2
+191 silly currentTree ├── qs@6.4.0
+191 silly currentTree ├── querystring-es3@0.2.1
+191 silly currentTree ├── querystring@0.2.0
+191 silly currentTree ├── quickly-copy-file@1.0.0
+191 silly currentTree ├── randomatic@1.1.6
+191 silly currentTree ├── randombytes@2.0.3
+191 silly currentTree ├── range-parser@1.2.0
+191 silly currentTree ├── read-components@0.7.0
+191 silly currentTree ├── readable-stream@2.2.6
+191 silly currentTree ├── readdirp@2.1.0
+191 silly currentTree ├── regenerate@1.3.2
+191 silly currentTree ├── regenerator-runtime@0.10.3
+191 silly currentTree ├── regenerator-transform@0.9.8
+191 silly currentTree ├── regex-cache@0.4.3
+191 silly currentTree ├── regexpu-core@2.0.0
+191 silly currentTree ├── regjsgen@0.2.0
+191 silly currentTree ├─┬ regjsparser@0.1.5
+191 silly currentTree │ └── jsesc@0.5.0
+191 silly currentTree ├── repeat-element@1.1.2
+191 silly currentTree ├── repeat-string@1.6.1
+191 silly currentTree ├── repeating@2.0.1
+191 silly currentTree ├── resolve-dir@0.1.1
+191 silly currentTree ├── resolve@1.1.7
+191 silly currentTree ├── right-align@0.1.3
+191 silly currentTree ├── ripemd160@1.0.1
+191 silly currentTree ├── semver@5.3.0
+191 silly currentTree ├─┬ send@0.15.1
+191 silly currentTree │ └── debug@2.6.1
+191 silly currentTree ├── serve-brunch@0.1.2
+191 silly currentTree ├── serve-static@1.12.1
+191 silly currentTree ├── set-immediate-shim@1.0.1
+191 silly currentTree ├── setprototypeof@1.0.3
+191 silly currentTree ├── sha.js@2.4.8
+191 silly currentTree ├── since-app-start@0.1.0
+191 silly currentTree ├── skemata@0.1.2
+191 silly currentTree ├── slash@1.0.0
+191 silly currentTree ├── source-map-support@0.4.14
+191 silly currentTree ├── source-map@0.5.6
+191 silly currentTree ├── statuses@1.3.1
+191 silly currentTree ├── stream-browserify@2.0.1
+191 silly currentTree ├── stream-http@2.1.1
+191 silly currentTree ├── string_decoder@0.10.31
+191 silly currentTree ├── strip-ansi@3.0.1
+191 silly currentTree ├── supports-color@2.0.0
+191 silly currentTree ├── timers-browserify@1.4.2
+191 silly currentTree ├── to-arraybuffer@1.0.1
+191 silly currentTree ├── to-fast-properties@1.0.2
+191 silly currentTree ├── trim-right@1.0.1
+191 silly currentTree ├─┬ true-case-path@1.0.2
+191 silly currentTree │ └── glob@6.0.4
+191 silly currentTree ├── tty-browserify@0.0.0
+191 silly currentTree ├── type-is@1.6.14
+191 silly currentTree ├── uglify-js-brunch@2.0.1
+191 silly currentTree ├── uglify-js@2.6.4
+191 silly currentTree ├── uglify-to-browserify@1.0.2
+191 silly currentTree ├── unpipe@1.0.0
+191 silly currentTree ├── untildify@2.1.0
+191 silly currentTree ├─┬ url@0.11.0
+191 silly currentTree │ └── punycode@1.3.2
+191 silly currentTree ├── util-deprecate@1.0.2
+191 silly currentTree ├─┬ util@0.10.3
+191 silly currentTree │ └── inherits@2.0.1
+191 silly currentTree ├── utils-merge@1.0.0
+191 silly currentTree ├── vary@1.1.1
+191 silly currentTree ├── vm-browserify@0.0.4
+191 silly currentTree ├── which@1.2.12
+191 silly currentTree ├── window-size@0.1.0
+191 silly currentTree ├── wordwrap@0.0.3
+191 silly currentTree ├── wrappy@1.0.2
+191 silly currentTree ├── xtend@4.0.1
+191 silly currentTree └── yargs@3.10.0
+192 silly idealTree vagrant
+192 silly idealTree ├── accepts@1.3.3
+192 silly idealTree ├── acorn@4.0.11
+192 silly idealTree ├── align-text@0.1.4
+192 silly idealTree ├── amdefine@1.0.1
+192 silly idealTree ├── ansi-regex@2.1.1
+192 silly idealTree ├── ansi-styles@2.2.1
+192 silly idealTree ├── ansicolors@0.3.2
+192 silly idealTree ├── anymatch@1.3.0
+192 silly idealTree ├── anysort@1.0.1
+192 silly idealTree ├── arr-diff@2.0.0
+192 silly idealTree ├── arr-flatten@1.0.1
+192 silly idealTree ├── array-flatten@1.1.1
+192 silly idealTree ├── array-unique@0.2.1
+192 silly idealTree ├── arrify@1.0.1
+192 silly idealTree ├── asn1.js@4.9.1
+192 silly idealTree ├── assert@1.3.0
+192 silly idealTree ├── async-each@1.0.1
+192 silly idealTree ├── async@0.2.10
+192 silly idealTree ├── babel-brunch@6.0.6
+192 silly idealTree ├── babel-code-frame@6.22.0
+192 silly idealTree ├── babel-core@6.24.0
+192 silly idealTree ├── babel-generator@6.24.0
+192 silly idealTree ├── babel-helper-builder-binary-assignment-operator-visitor@6.22.0
+192 silly idealTree ├── babel-helper-call-delegate@6.22.0
+192 silly idealTree ├── babel-helper-define-map@6.23.0
+192 silly idealTree ├── babel-helper-explode-assignable-expression@6.22.0
+192 silly idealTree ├── babel-helper-function-name@6.23.0
+192 silly idealTree ├── babel-helper-get-function-arity@6.22.0
+192 silly idealTree ├── babel-helper-hoist-variables@6.22.0
+192 silly idealTree ├── babel-helper-optimise-call-expression@6.23.0
+192 silly idealTree ├── babel-helper-regex@6.22.0
+192 silly idealTree ├── babel-helper-replace-supers@6.23.0
+192 silly idealTree ├── babel-helpers@6.23.0
+192 silly idealTree ├── babel-messages@6.23.0
+192 silly idealTree ├── babel-plugin-check-es2015-constants@6.22.0
+192 silly idealTree ├── babel-plugin-syntax-exponentiation-operator@6.13.0
+192 silly idealTree ├── babel-plugin-transform-es2015-arrow-functions@6.22.0
+192 silly idealTree ├── babel-plugin-transform-es2015-block-scoped-functions@6.22.0
+192 silly idealTree ├── babel-plugin-transform-es2015-block-scoping@6.23.0
+192 silly idealTree ├── babel-plugin-transform-es2015-classes@6.23.0
+192 silly idealTree ├── babel-plugin-transform-es2015-computed-properties@6.22.0
+192 silly idealTree ├── babel-plugin-transform-es2015-destructuring@6.23.0
+192 silly idealTree ├── babel-plugin-transform-es2015-duplicate-keys@6.22.0
+192 silly idealTree ├── babel-plugin-transform-es2015-for-of@6.23.0
+192 silly idealTree ├── babel-plugin-transform-es2015-function-name@6.22.0
+192 silly idealTree ├── babel-plugin-transform-es2015-literals@6.22.0
+192 silly idealTree ├── babel-plugin-transform-es2015-modules-amd@6.24.0
+192 silly idealTree ├── babel-plugin-transform-es2015-modules-commonjs@6.24.0
+192 silly idealTree ├── babel-plugin-transform-es2015-modules-systemjs@6.23.0
+192 silly idealTree ├── babel-plugin-transform-es2015-modules-umd@6.24.0
+192 silly idealTree ├── babel-plugin-transform-es2015-object-super@6.22.0
+192 silly idealTree ├── babel-plugin-transform-es2015-parameters@6.23.0
+192 silly idealTree ├── babel-plugin-transform-es2015-shorthand-properties@6.22.0
+192 silly idealTree ├── babel-plugin-transform-es2015-spread@6.22.0
+192 silly idealTree ├── babel-plugin-transform-es2015-sticky-regex@6.22.0
+192 silly idealTree ├── babel-plugin-transform-es2015-template-literals@6.22.0
+192 silly idealTree ├── babel-plugin-transform-es2015-typeof-symbol@6.23.0
+192 silly idealTree ├── babel-plugin-transform-es2015-unicode-regex@6.22.0
+192 silly idealTree ├── babel-plugin-transform-exponentiation-operator@6.22.0
+192 silly idealTree ├── babel-plugin-transform-regenerator@6.22.0
+192 silly idealTree ├── babel-plugin-transform-strict-mode@6.22.0
+192 silly idealTree ├── babel-preset-es2015@6.24.0
+192 silly idealTree ├── babel-preset-es2016@6.22.0
+192 silly idealTree ├── babel-register@6.24.0
+192 silly idealTree ├── babel-runtime@6.23.0
+192 silly idealTree ├── babel-template@6.23.0
+192 silly idealTree ├── babel-traverse@6.23.1
+192 silly idealTree ├── babel-types@6.23.0
+192 silly idealTree ├── babylon@6.16.1
+192 silly idealTree ├── balanced-match@0.4.2
+192 silly idealTree ├── base64-js@1.2.0
+192 silly idealTree ├── binary-extensions@1.8.0
+192 silly idealTree ├── bn.js@4.11.6
+192 silly idealTree ├── bower-config@1.4.0
+192 silly idealTree ├── brace-expansion@1.1.6
+192 silly idealTree ├── braces@1.8.5
+192 silly idealTree ├── brorand@1.1.0
+192 silly idealTree ├── browser-resolve@1.11.2
+192 silly idealTree ├── browserify-aes@1.0.6
+192 silly idealTree ├── browserify-cipher@1.0.0
+192 silly idealTree ├── browserify-des@1.0.0
+192 silly idealTree ├── browserify-rsa@4.0.1
+192 silly idealTree ├── browserify-sign@4.0.0
+192 silly idealTree ├── brunch-skeletons@0.1.5
+192 silly idealTree ├─┬ brunch@2.7.4
+192 silly idealTree │ ├── debug@2.2.0
+192 silly idealTree │ └── ms@0.7.1
+192 silly idealTree ├── buffer-shims@1.0.0
+192 silly idealTree ├── buffer-xor@1.0.3
+192 silly idealTree ├── buffer@4.3.1
+192 silly idealTree ├── builtin-status-codes@2.0.0
+192 silly idealTree ├── camelcase@1.2.1
+192 silly idealTree ├── center-align@0.1.3
+192 silly idealTree ├── chalk@1.1.3
+192 silly idealTree ├─┬ check-dependencies@0.12.3
+192 silly idealTree │ └── minimist@1.2.0
+192 silly idealTree ├── chokidar@1.4.3
+192 silly idealTree ├── cipher-base@1.0.3
+192 silly idealTree ├── clean-css-brunch@2.0.0
+192 silly idealTree ├─┬ clean-css@3.4.25
+192 silly idealTree │ ├── commander@2.8.1
+192 silly idealTree │ └── source-map@0.4.4
+192 silly idealTree ├─┬ cliui@2.1.0
+192 silly idealTree │ └── wordwrap@0.0.2
+192 silly idealTree ├── coffee-script@1.10.0
+192 silly idealTree ├── commander@2.9.0
+192 silly idealTree ├── commonjs-require-definition@0.5.0
+192 silly idealTree ├── concat-map@0.0.1
+192 silly idealTree ├── connect-slashes@1.3.1
+192 silly idealTree ├── content-disposition@0.5.2
+192 silly idealTree ├── content-type@1.0.2
+192 silly idealTree ├── convert-source-map@1.4.0
+192 silly idealTree ├── cookie-signature@1.0.6
+192 silly idealTree ├── cookie@0.3.1
+192 silly idealTree ├── core-js@2.4.1
+192 silly idealTree ├── core-util-is@1.0.2
+192 silly idealTree ├── create-ecdh@4.0.0
+192 silly idealTree ├── create-hash@1.1.2
+192 silly idealTree ├── create-hmac@1.1.4
+192 silly idealTree ├── crypto-browserify@3.11.0
+192 silly idealTree ├── css-brunch@2.0.0
+192 silly idealTree ├── debug@2.6.3
+192 silly idealTree ├── decamelize@1.2.0
+192 silly idealTree ├── deep-assign@2.0.0
+192 silly idealTree ├── defined@1.0.0
+192 silly idealTree ├── depd@1.1.0
+192 silly idealTree ├── deppack@0.4.4
+192 silly idealTree ├── des.js@1.0.0
+192 silly idealTree ├── destroy@1.0.4
+192 silly idealTree ├── detect-file@0.1.0
+192 silly idealTree ├── detect-indent@4.0.0
+192 silly idealTree ├── detective@4.5.0
+192 silly idealTree ├── diffie-hellman@5.0.2
+192 silly idealTree ├── domain-browser@1.1.7
+192 silly idealTree ├── ee-first@1.1.1
+192 silly idealTree ├── elliptic@6.4.0
+192 silly idealTree ├── encodeurl@1.0.1
+192 silly idealTree ├── escape-html@1.0.3
+192 silly idealTree ├── escape-string-regexp@1.0.5
+192 silly idealTree ├── esprima@2.7.3
+192 silly idealTree ├── esutils@2.0.2
+192 silly idealTree ├── etag@1.8.0
+192 silly idealTree ├── events@1.1.1
+192 silly idealTree ├── evp_bytestokey@1.0.0
+192 silly idealTree ├── expand-brackets@0.1.5
+192 silly idealTree ├── expand-range@1.8.2
+192 silly idealTree ├── expand-tilde@1.2.2
+192 silly idealTree ├─┬ express@4.15.2
+192 silly idealTree │ └── debug@2.6.1
+192 silly idealTree ├── extglob@0.3.2
+192 silly idealTree ├── fast-levenshtein@1.1.4
+192 silly idealTree ├── fcache@0.1.1
+192 silly idealTree ├── filename-regex@2.0.0
+192 silly idealTree ├── fill-range@2.2.3
+192 silly idealTree ├─┬ finalhandler@1.0.0
+192 silly idealTree │ └── debug@2.6.1
+192 silly idealTree ├── findup-sync@0.4.3
+192 silly idealTree ├── for-in@1.0.2
+192 silly idealTree ├── for-own@0.1.5
+192 silly idealTree ├── forwarded@0.1.0
+192 silly idealTree ├── fresh@0.5.0
+192 silly idealTree ├── fs-exists-sync@0.1.0
+192 silly idealTree ├── fs.realpath@1.0.0
+192 silly idealTree ├── glob-base@0.3.0
+192 silly idealTree ├── glob-parent@2.0.0
+192 silly idealTree ├── glob@7.1.1
+192 silly idealTree ├── global-modules@0.2.3
+192 silly idealTree ├── global-prefix@0.1.5
+192 silly idealTree ├── globals@9.16.0
+192 silly idealTree ├── graceful-fs@4.1.11
+192 silly idealTree ├── graceful-readlink@1.0.1
+192 silly idealTree ├── growl@1.8.1
+192 silly idealTree ├── has-ansi@2.0.0
+192 silly idealTree ├── hash.js@1.0.3
+192 silly idealTree ├── hmac-drbg@1.0.0
+192 silly idealTree ├── home-or-tmp@2.0.0
+192 silly idealTree ├── homedir-polyfill@1.0.1
+192 silly idealTree ├── hosted-git-info@2.1.5
+192 silly idealTree ├── http-errors@1.6.1
+192 silly idealTree ├── https-browserify@0.0.1
+192 silly idealTree ├── ieee754@1.1.8
+192 silly idealTree ├── indexof@0.0.1
+192 silly idealTree ├── inflight@1.0.6
+192 silly idealTree ├── inherits@2.0.3
+192 silly idealTree ├── ini@1.3.4
+192 silly idealTree ├── init-skeleton@0.9.5
+192 silly idealTree ├── invariant@2.2.2
+192 silly idealTree ├── ipaddr.js@1.2.0
+192 silly idealTree ├── is-binary-path@1.0.1
+192 silly idealTree ├── is-buffer@1.1.5
+192 silly idealTree ├── is-dotfile@1.0.2
+192 silly idealTree ├── is-equal-shallow@0.1.3
+192 silly idealTree ├── is-extendable@0.1.1
+192 silly idealTree ├── is-extglob@1.0.0
+192 silly idealTree ├── is-finite@1.0.2
+192 silly idealTree ├── is-glob@2.0.1
+192 silly idealTree ├── is-number@2.1.0
+192 silly idealTree ├── is-obj@1.0.1
+192 silly idealTree ├── is-posix-bracket@0.1.1
+192 silly idealTree ├── is-primitive@2.0.0
+192 silly idealTree ├── is-windows@0.2.0
+192 silly idealTree ├── isarray@1.0.0
+192 silly idealTree ├── isexe@1.1.2
+192 silly idealTree ├── isobject@2.1.0
+192 silly idealTree ├── javascript-brunch@2.0.0
+192 silly idealTree ├── js-tokens@3.0.1
+192 silly idealTree ├── jsesc@1.3.0
+192 silly idealTree ├── json5@0.5.1
+192 silly idealTree ├── kind-of@3.1.0
+192 silly idealTree ├── lazy-cache@1.0.4
+192 silly idealTree ├── lodash@4.17.4
+192 silly idealTree ├── loggy@0.3.5
+192 silly idealTree ├── longest@1.0.1
+192 silly idealTree ├── loose-envify@1.3.1
+192 silly idealTree ├── media-typer@0.3.0
+192 silly idealTree ├── merge-descriptors@1.0.1
+192 silly idealTree ├── methods@1.1.2
+192 silly idealTree ├── micro-promisify@0.1.1
+192 silly idealTree ├── micromatch@2.3.11
+192 silly idealTree ├── miller-rabin@4.0.0
+192 silly idealTree ├── mime-db@1.26.0
+192 silly idealTree ├── mime-types@2.1.14
+192 silly idealTree ├── mime@1.3.4
+192 silly idealTree ├── minimalistic-assert@1.0.0
+192 silly idealTree ├── minimalistic-crypto-utils@1.0.1
+192 silly idealTree ├── minimatch@3.0.3
+192 silly idealTree ├── minimist@0.0.8
+192 silly idealTree ├── mkdirp@0.5.1
+192 silly idealTree ├── mout@1.0.0
+192 silly idealTree ├── ms@0.7.2
+192 silly idealTree ├── ncp@2.0.0
+192 silly idealTree ├── negotiator@0.6.1
+192 silly idealTree ├─┬ node-browser-modules@0.1.0
+192 silly idealTree │ └── readable-stream@2.0.6
+192 silly idealTree ├── normalize-git-url@3.0.2
+192 silly idealTree ├── normalize-path@2.0.1
+192 silly idealTree ├── number-is-nan@1.0.1
+192 silly idealTree ├── object.omit@2.0.1
+192 silly idealTree ├── on-finished@2.3.0
+192 silly idealTree ├── once@1.4.0
+192 silly idealTree ├── optimist@0.6.1
+192 silly idealTree ├── os-browserify@0.2.1
+192 silly idealTree ├── os-homedir@1.0.2
+192 silly idealTree ├── os-tmpdir@1.0.2
+192 silly idealTree ├── osenv@0.1.4
+192 silly idealTree ├── parse-asn1@5.1.0
+192 silly idealTree ├── parse-glob@3.0.4
+192 silly idealTree ├── parse-passwd@1.0.0
+192 silly idealTree ├── parseurl@1.3.1
+192 silly idealTree ├── path-browserify@0.0.0
+192 silly idealTree ├── path-is-absolute@1.0.1
+192 silly idealTree ├── path-to-regexp@0.1.7
+192 silly idealTree ├── pbkdf2@3.0.9
+192 silly idealTree ├── phoenix_html@2.9.2
+192 silly idealTree ├── phoenix@1.2.1
+192 silly idealTree ├── preserve@0.2.0
+192 silly idealTree ├── private@0.1.7
+192 silly idealTree ├── process-nextick-args@1.0.7
+192 silly idealTree ├── process@0.11.9
+192 silly idealTree ├── proxy-addr@1.1.3
+192 silly idealTree ├── public-encrypt@4.0.0
+192 silly idealTree ├── punycode@1.4.1
+192 silly idealTree ├── pushserve@1.0.2
+192 silly idealTree ├── qs@6.4.0
+192 silly idealTree ├── querystring-es3@0.2.1
+192 silly idealTree ├── querystring@0.2.0
+192 silly idealTree ├── quickly-copy-file@1.0.0
+192 silly idealTree ├── randomatic@1.1.6
+192 silly idealTree ├── randombytes@2.0.3
+192 silly idealTree ├── range-parser@1.2.0
+192 silly idealTree ├── read-components@0.7.0
+192 silly idealTree ├── readable-stream@2.2.6
+192 silly idealTree ├── readdirp@2.1.0
+192 silly idealTree ├── regenerate@1.3.2
+192 silly idealTree ├── regenerator-runtime@0.10.3
+192 silly idealTree ├── regenerator-transform@0.9.8
+192 silly idealTree ├── regex-cache@0.4.3
+192 silly idealTree ├── regexpu-core@2.0.0
+192 silly idealTree ├── regjsgen@0.2.0
+192 silly idealTree ├─┬ regjsparser@0.1.5
+192 silly idealTree │ └── jsesc@0.5.0
+192 silly idealTree ├── repeat-element@1.1.2
+192 silly idealTree ├── repeat-string@1.6.1
+192 silly idealTree ├── repeating@2.0.1
+192 silly idealTree ├── resolve-dir@0.1.1
+192 silly idealTree ├── resolve@1.1.7
+192 silly idealTree ├── right-align@0.1.3
+192 silly idealTree ├── ripemd160@1.0.1
+192 silly idealTree ├── semver@5.3.0
+192 silly idealTree ├─┬ send@0.15.1
+192 silly idealTree │ └── debug@2.6.1
+192 silly idealTree ├── serve-brunch@0.1.2
+192 silly idealTree ├── serve-static@1.12.1
+192 silly idealTree ├── set-immediate-shim@1.0.1
+192 silly idealTree ├── setprototypeof@1.0.3
+192 silly idealTree ├── sha.js@2.4.8
+192 silly idealTree ├── since-app-start@0.1.0
+192 silly idealTree ├── skemata@0.1.2
+192 silly idealTree ├── slash@1.0.0
+192 silly idealTree ├── source-map-support@0.4.14
+192 silly idealTree ├── source-map@0.5.6
+192 silly idealTree ├── statuses@1.3.1
+192 silly idealTree ├── stream-browserify@2.0.1
+192 silly idealTree ├── stream-http@2.1.1
+192 silly idealTree ├── string_decoder@0.10.31
+192 silly idealTree ├── strip-ansi@3.0.1
+192 silly idealTree ├── supports-color@2.0.0
+192 silly idealTree ├── timers-browserify@1.4.2
+192 silly idealTree ├── to-arraybuffer@1.0.1
+192 silly idealTree ├── to-fast-properties@1.0.2
+192 silly idealTree ├── trim-right@1.0.1
+192 silly idealTree ├─┬ true-case-path@1.0.2
+192 silly idealTree │ └── glob@6.0.4
+192 silly idealTree ├── tty-browserify@0.0.0
+192 silly idealTree ├── type-is@1.6.14
+192 silly idealTree ├── uglify-js-brunch@2.0.1
+192 silly idealTree ├── uglify-js@2.6.4
+192 silly idealTree ├── uglify-to-browserify@1.0.2
+192 silly idealTree ├── unpipe@1.0.0
+192 silly idealTree ├── untildify@2.1.0
+192 silly idealTree ├─┬ url@0.11.0
+192 silly idealTree │ └── punycode@1.3.2
+192 silly idealTree ├── util-deprecate@1.0.2
+192 silly idealTree ├─┬ util@0.10.3
+192 silly idealTree │ └── inherits@2.0.1
+192 silly idealTree ├── utils-merge@1.0.0
+192 silly idealTree ├── vary@1.1.1
+192 silly idealTree ├── vm-browserify@0.0.4
+192 silly idealTree ├── which@1.2.12
+192 silly idealTree ├── window-size@0.1.0
+192 silly idealTree ├── wordwrap@0.0.3
+192 silly idealTree ├── wrappy@1.0.2
+192 silly idealTree ├── xtend@4.0.1
+192 silly idealTree └── yargs@3.10.0
+193 silly generateActionsToTake Starting
+194 silly install generateActionsToTake
+195 silly generateActionsToTake Finishing
+196 silly diffTrees action count 4
+197 silly diffTrees add ms@0.7.1
+198 silly diffTrees add debug@2.2.0
+199 silly diffTrees add coffee-script@1.10.0
+200 silly diffTrees add brunch@2.7.4
+201 silly decomposeActions action count 32
+202 silly decomposeActions fetch ms@0.7.1
+203 silly decomposeActions extract ms@0.7.1
+204 silly decomposeActions test ms@0.7.1
+205 silly decomposeActions preinstall ms@0.7.1
+206 silly decomposeActions build ms@0.7.1
+207 silly decomposeActions install ms@0.7.1
+208 silly decomposeActions postinstall ms@0.7.1
+209 silly decomposeActions finalize ms@0.7.1
+210 silly decomposeActions fetch debug@2.2.0
+211 silly decomposeActions extract debug@2.2.0
+212 silly decomposeActions test debug@2.2.0
+213 silly decomposeActions preinstall debug@2.2.0
+214 silly decomposeActions build debug@2.2.0
+215 silly decomposeActions install debug@2.2.0
+216 silly decomposeActions postinstall debug@2.2.0
+217 silly decomposeActions finalize debug@2.2.0
+218 silly decomposeActions fetch coffee-script@1.10.0
+219 silly decomposeActions extract coffee-script@1.10.0
+220 silly decomposeActions test coffee-script@1.10.0
+221 silly decomposeActions preinstall coffee-script@1.10.0
+222 silly decomposeActions build coffee-script@1.10.0
+223 silly decomposeActions install coffee-script@1.10.0
+224 silly decomposeActions postinstall coffee-script@1.10.0
+225 silly decomposeActions finalize coffee-script@1.10.0
+226 silly decomposeActions fetch brunch@2.7.4
+227 silly decomposeActions extract brunch@2.7.4
+228 silly decomposeActions test brunch@2.7.4
+229 silly decomposeActions preinstall brunch@2.7.4
+230 silly decomposeActions build brunch@2.7.4
+231 silly decomposeActions install brunch@2.7.4
+232 silly decomposeActions postinstall brunch@2.7.4
+233 silly decomposeActions finalize brunch@2.7.4
+234 silly runTopLevelLifecycles Starting
+235 silly install runPreinstallTopLevelLifecycles
+236 silly preinstall vagrant /vagrant/vagrant-755e2416
+237 info lifecycle undefined~preinstall: undefined
+238 silly lifecycle undefined~preinstall: no script for preinstall, continuing
+239 silly executeActions Starting
+240 silly install executeActions
+241 silly doSerial global-install 0
+242 silly doParallel fetch 4
+243 verbose correctMkdir /home/vagrant/.npm/_locks correctMkdir not in flight; initializing
+244 verbose lock using /home/vagrant/.npm/_locks/staging-db29c5a769436947.lock for /vagrant/node_modules/.staging
+245 silly doParallel extract 4
+246 silly extract ms@0.7.1
+247 silly extract debug@2.2.0
+248 silly extract coffee-script@1.10.0
+249 silly extract brunch@2.7.4
+250 verbose unbuild node_modules/.staging/ms-6baa4c5b
+251 verbose unbuild node_modules/.staging/debug-7318c4b1
+252 verbose unbuild node_modules/.staging/coffee-script-a61f7ef8
+253 verbose unbuild node_modules/.staging/brunch-e0edbf79
+254 silly gentlyRm /vagrant/node_modules/.staging/ms-6baa4c5b is being purged from base /vagrant
+255 verbose gentlyRm don't care about contents; nuking /vagrant/node_modules/.staging/ms-6baa4c5b
+256 silly gentlyRm /vagrant/node_modules/.staging/debug-7318c4b1 is being purged from base /vagrant
+257 verbose gentlyRm don't care about contents; nuking /vagrant/node_modules/.staging/debug-7318c4b1
+258 verbose tar unpack /home/vagrant/.npm/ms/0.7.1/package.tgz
+259 verbose tar unpacking to /vagrant/node_modules/.staging/ms-6baa4c5b
+260 silly gentlyRm /vagrant/node_modules/.staging/ms-6baa4c5b is being purged
+261 verbose gentlyRm don't care about contents; nuking /vagrant/node_modules/.staging/ms-6baa4c5b
+262 silly gentlyRm /vagrant/node_modules/.staging/brunch-e0edbf79 is being purged from base /vagrant
+263 verbose gentlyRm don't care about contents; nuking /vagrant/node_modules/.staging/brunch-e0edbf79
+264 verbose tar unpack /home/vagrant/.npm/debug/2.2.0/package.tgz
+265 verbose tar unpacking to /vagrant/node_modules/.staging/debug-7318c4b1
+266 silly gentlyRm /vagrant/node_modules/.staging/debug-7318c4b1 is being purged
+267 verbose gentlyRm don't care about contents; nuking /vagrant/node_modules/.staging/debug-7318c4b1
+268 verbose tar unpack /home/vagrant/.npm/brunch/2.7.4/package.tgz
+269 verbose tar unpacking to /vagrant/node_modules/.staging/brunch-e0edbf79
+270 silly gentlyRm /vagrant/node_modules/.staging/brunch-e0edbf79 is being purged
+271 verbose gentlyRm don't care about contents; nuking /vagrant/node_modules/.staging/brunch-e0edbf79
+272 silly gunzTarPerm modes [ '775', '664' ]
+273 silly gunzTarPerm modes [ '775', '664' ]
+274 silly gunzTarPerm modes [ '775', '664' ]
+275 silly gentlyRm /vagrant/node_modules/.staging/coffee-script-a61f7ef8 is being purged from base /vagrant
+276 verbose gentlyRm don't care about contents; nuking /vagrant/node_modules/.staging/coffee-script-a61f7ef8
+277 verbose tar unpack /home/vagrant/.npm/coffee-script/1.10.0/package.tgz
+278 verbose tar unpacking to /vagrant/node_modules/.staging/coffee-script-a61f7ef8
+279 silly gentlyRm /vagrant/node_modules/.staging/coffee-script-a61f7ef8 is being purged
+280 verbose gentlyRm don't care about contents; nuking /vagrant/node_modules/.staging/coffee-script-a61f7ef8
+281 silly gunzTarPerm modes [ '775', '664' ]
+282 silly gunzTarPerm extractEntry package.json
+283 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+284 silly gunzTarPerm extractEntry package.json
+285 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+286 silly gunzTarPerm extractEntry package.json
+287 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+288 silly gunzTarPerm extractEntry package.json
+289 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+290 silly gunzTarPerm extractEntry .npmignore
+291 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+292 silly gunzTarPerm extractEntry node.js
+293 silly gunzTarPerm modified mode [ 'node.js', 420, 436 ]
+294 silly gunzTarPerm extractEntry .npmignore
+295 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+296 silly gunzTarPerm extractEntry README.md
+297 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+298 silly gunzTarPerm extractEntry README.md
+299 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+300 silly gunzTarPerm extractEntry CHANGELOG.md
+301 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 436 ]
+302 silly gunzTarPerm extractEntry .npmignore
+303 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+304 silly gunzTarPerm extractEntry README.md
+305 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+306 silly gunzTarPerm extractEntry debug.js
+307 silly gunzTarPerm modified mode [ 'debug.js', 420, 436 ]
+308 silly gunzTarPerm extractEntry browser.js
+309 silly gunzTarPerm modified mode [ 'browser.js', 420, 436 ]
+310 silly gunzTarPerm extractEntry LICENSE
+311 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+312 silly gunzTarPerm extractEntry index.js
+313 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+314 silly gunzTarPerm extractEntry bin/brunch
+315 silly gunzTarPerm modified mode [ 'bin/brunch', 493, 509 ]
+316 silly gunzTarPerm extractEntry LICENSE
+317 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+318 silly gunzTarPerm extractEntry register.js
+319 silly gunzTarPerm modified mode [ 'register.js', 420, 436 ]
+320 silly gunzTarPerm extractEntry Readme.md
+321 silly gunzTarPerm modified mode [ 'Readme.md', 420, 436 ]
+322 silly gunzTarPerm extractEntry History.md
+323 silly gunzTarPerm modified mode [ 'History.md', 420, 436 ]
+324 silly gunzTarPerm extractEntry lib/cli.js
+325 silly gunzTarPerm modified mode [ 'lib/cli.js', 420, 436 ]
+326 silly gunzTarPerm extractEntry lib/config.js
+327 silly gunzTarPerm modified mode [ 'lib/config.js', 420, 436 ]
+328 silly gunzTarPerm extractEntry lib/watch.js
+329 silly gunzTarPerm modified mode [ 'lib/watch.js', 420, 436 ]
+330 silly gunzTarPerm extractEntry repl.js
+331 silly gunzTarPerm modified mode [ 'repl.js', 420, 436 ]
+332 silly gunzTarPerm extractEntry bin/cake
+333 silly gunzTarPerm modified mode [ 'bin/cake', 493, 509 ]
+334 silly gunzTarPerm extractEntry lib/helpers.js
+335 silly gunzTarPerm modified mode [ 'lib/helpers.js', 420, 436 ]
+336 silly gunzTarPerm extractEntry lib/commands.js
+337 silly gunzTarPerm modified mode [ 'lib/commands.js', 420, 436 ]
+338 silly gunzTarPerm extractEntry bower.json
+339 silly gunzTarPerm modified mode [ 'bower.json', 420, 436 ]
+340 silly gunzTarPerm extractEntry .jshintrc
+341 silly gunzTarPerm modified mode [ '.jshintrc', 420, 436 ]
+342 silly gunzTarPerm extractEntry bin/coffee
+343 silly gunzTarPerm modified mode [ 'bin/coffee', 493, 509 ]
+344 silly gunzTarPerm extractEntry bower.json
+345 silly gunzTarPerm modified mode [ 'bower.json', 420, 436 ]
+346 silly gunzTarPerm extractEntry lib/index.js
+347 silly gunzTarPerm modified mode [ 'lib/index.js', 420, 436 ]
+348 silly gunzTarPerm extractEntry lib/modules.js
+349 silly gunzTarPerm modified mode [ 'lib/modules.js', 420, 436 ]
+350 silly gunzTarPerm extractEntry component.json
+351 silly gunzTarPerm modified mode [ 'component.json', 420, 436 ]
+352 silly gunzTarPerm extractEntry Makefile
+353 silly gunzTarPerm modified mode [ 'Makefile', 420, 436 ]
+354 silly gunzTarPerm extractEntry CONTRIBUTING.md
+355 silly gunzTarPerm modified mode [ 'CONTRIBUTING.md', 420, 436 ]
+356 silly gunzTarPerm extractEntry lib/coffee-script/browser.js
+357 silly gunzTarPerm modified mode [ 'lib/coffee-script/browser.js', 420, 436 ]
+358 silly gunzTarPerm extractEntry lib/plugins.js
+359 silly gunzTarPerm modified mode [ 'lib/plugins.js', 420, 436 ]
+360 silly gunzTarPerm extractEntry lib/hmr.js
+361 silly gunzTarPerm modified mode [ 'lib/hmr.js', 420, 436 ]
+362 silly gunzTarPerm extractEntry History.md
+363 silly gunzTarPerm modified mode [ 'History.md', 420, 436 ]
+364 silly gunzTarPerm extractEntry lib/coffee-script/grammar.js
+365 silly gunzTarPerm modified mode [ 'lib/coffee-script/grammar.js', 420, 436 ]
+366 silly gunzTarPerm extractEntry lib/coffee-script/helpers.js
+367 silly gunzTarPerm modified mode [ 'lib/coffee-script/helpers.js', 420, 436 ]
+368 silly gunzTarPerm extractEntry lib/coffee-script/index.js
+369 silly gunzTarPerm modified mode [ 'lib/coffee-script/index.js', 420, 436 ]
+370 silly gunzTarPerm extractEntry lib/coffee-script/lexer.js
+371 silly gunzTarPerm modified mode [ 'lib/coffee-script/lexer.js', 420, 436 ]
+372 silly gunzTarPerm extractEntry lib/fs_utils/asset.js
+373 silly gunzTarPerm modified mode [ 'lib/fs_utils/asset.js', 420, 436 ]
+374 silly gunzTarPerm extractEntry lib/fs_utils/common.js
+375 silly gunzTarPerm modified mode [ 'lib/fs_utils/common.js', 420, 436 ]
+376 silly gunzTarPerm extractEntry lib/fs_utils/file_list.js
+377 silly gunzTarPerm modified mode [ 'lib/fs_utils/file_list.js', 420, 436 ]
+378 silly gunzTarPerm extractEntry lib/fs_utils/generate.js
+379 silly gunzTarPerm modified mode [ 'lib/fs_utils/generate.js', 420, 436 ]
+380 silly gentlyRm /vagrant/node_modules/.staging/ms-6baa4c5b/node_modules is being purged
+381 verbose gentlyRm don't care about contents; nuking /vagrant/node_modules/.staging/ms-6baa4c5b/node_modules
+382 silly gunzTarPerm extractEntry lib/coffee-script/command.js
+383 silly gunzTarPerm modified mode [ 'lib/coffee-script/command.js', 420, 436 ]
+384 silly gunzTarPerm extractEntry lib/coffee-script/optparse.js
+385 silly gunzTarPerm modified mode [ 'lib/coffee-script/optparse.js', 420, 436 ]
+386 silly gunzTarPerm extractEntry lib/fs_utils/index.js
+387 silly gunzTarPerm modified mode [ 'lib/fs_utils/index.js', 420, 436 ]
+388 silly gunzTarPerm extractEntry lib/fs_utils/pipeline.js
+389 silly gunzTarPerm modified mode [ 'lib/fs_utils/pipeline.js', 420, 436 ]
+390 silly gunzTarPerm extractEntry lib/coffee-script/parser.js
+391 silly gunzTarPerm modified mode [ 'lib/coffee-script/parser.js', 493, 509 ]
+392 silly gunzTarPerm extractEntry lib/coffee-script/register.js
+393 silly gunzTarPerm modified mode [ 'lib/coffee-script/register.js', 420, 436 ]
+394 silly gunzTarPerm extractEntry lib/fs_utils/source_file.js
+395 silly gunzTarPerm modified mode [ 'lib/fs_utils/source_file.js', 420, 436 ]
+396 silly gunzTarPerm extractEntry lib/fs_utils/write.js
+397 silly gunzTarPerm modified mode [ 'lib/fs_utils/write.js', 420, 436 ]
+398 silly gunzTarPerm extractEntry lib/coffee-script/repl.js
+399 silly gunzTarPerm modified mode [ 'lib/coffee-script/repl.js', 420, 436 ]
+400 silly gunzTarPerm extractEntry lib/coffee-script/rewriter.js
+401 silly gunzTarPerm modified mode [ 'lib/coffee-script/rewriter.js', 420, 436 ]
+402 silly gunzTarPerm extractEntry lib/workers/index.js
+403 silly gunzTarPerm modified mode [ 'lib/workers/index.js', 420, 436 ]
+404 silly gunzTarPerm extractEntry lib/workers/job-processor.js
+405 silly gunzTarPerm modified mode [ 'lib/workers/job-processor.js', 420, 436 ]
+406 silly gunzTarPerm extractEntry lib/workers/manager.js
+407 silly gunzTarPerm modified mode [ 'lib/workers/manager.js', 420, 436 ]
+408 silly gunzTarPerm extractEntry lib/coffee-script/coffee-script.js
+409 silly gunzTarPerm modified mode [ 'lib/coffee-script/coffee-script.js', 420, 436 ]
+410 silly gunzTarPerm extractEntry lib/coffee-script/scope.js
+411 silly gunzTarPerm modified mode [ 'lib/coffee-script/scope.js', 420, 436 ]
+412 silly gentlyRm /vagrant/node_modules/.staging/debug-7318c4b1/node_modules is being purged
+413 verbose gentlyRm don't care about contents; nuking /vagrant/node_modules/.staging/debug-7318c4b1/node_modules
+414 silly gunzTarPerm extractEntry lib/coffee-script/cake.js
+415 silly gunzTarPerm modified mode [ 'lib/coffee-script/cake.js', 420, 436 ]
+416 silly gunzTarPerm extractEntry lib/coffee-script/sourcemap.js
+417 silly gunzTarPerm modified mode [ 'lib/coffee-script/sourcemap.js', 420, 436 ]
+418 silly gunzTarPerm extractEntry lib/coffee-script/nodes.js
+419 silly gunzTarPerm modified mode [ 'lib/coffee-script/nodes.js', 420, 436 ]
+420 silly gunzTarPerm extractEntry CNAME
+421 silly gunzTarPerm modified mode [ 'CNAME', 420, 436 ]
+422 silly gentlyRm /vagrant/node_modules/.staging/brunch-e0edbf79/node_modules is being purged
+423 verbose gentlyRm don't care about contents; nuking /vagrant/node_modules/.staging/brunch-e0edbf79/node_modules
+424 silly gentlyRm /vagrant/node_modules/.staging/coffee-script-a61f7ef8/node_modules is being purged
+425 verbose gentlyRm don't care about contents; nuking /vagrant/node_modules/.staging/coffee-script-a61f7ef8/node_modules
+426 silly doParallel preinstall 4
+427 silly preinstall ms@0.7.1 /vagrant/node_modules/.staging/ms-6baa4c5b
+428 info lifecycle ms@0.7.1~preinstall: ms@0.7.1
+429 silly preinstall debug@2.2.0 /vagrant/node_modules/.staging/debug-7318c4b1
+430 info lifecycle debug@2.2.0~preinstall: debug@2.2.0
+431 silly preinstall coffee-script@1.10.0 /vagrant/node_modules/.staging/coffee-script-a61f7ef8
+432 info lifecycle coffee-script@1.10.0~preinstall: coffee-script@1.10.0
+433 silly preinstall brunch@2.7.4 /vagrant/node_modules/.staging/brunch-e0edbf79
+434 info lifecycle brunch@2.7.4~preinstall: brunch@2.7.4
+435 silly lifecycle debug@2.2.0~preinstall: no script for preinstall, continuing
+436 silly lifecycle ms@0.7.1~preinstall: no script for preinstall, continuing
+437 silly lifecycle brunch@2.7.4~preinstall: no script for preinstall, continuing
+438 silly lifecycle coffee-script@1.10.0~preinstall: no script for preinstall, continuing
+439 silly doReverseSerial remove 0
+440 silly doSerial move 0
+441 silly doSerial finalize 4
+442 silly finalize /vagrant/node_modules/brunch/node_modules/ms
+443 silly finalize /vagrant/node_modules/brunch/node_modules/debug
+444 silly finalize /vagrant/node_modules/coffee-script
+445 silly finalize /vagrant/node_modules/brunch
+446 silly doSerial build 4
+447 silly build ms@0.7.1
+448 info linkStuff ms@0.7.1
+449 silly linkStuff ms@0.7.1 has /vagrant/node_modules/brunch/node_modules as its parent node_modules
+450 verbose linkBins ms@0.7.1
+451 verbose linkMans ms@0.7.1
+452 silly build debug@2.2.0
+453 info linkStuff debug@2.2.0
+454 silly linkStuff debug@2.2.0 has /vagrant/node_modules/brunch/node_modules as its parent node_modules
+455 verbose linkBins debug@2.2.0
+456 verbose linkMans debug@2.2.0
+457 silly build coffee-script@1.10.0
+458 info linkStuff coffee-script@1.10.0
+459 silly linkStuff coffee-script@1.10.0 has /vagrant/node_modules as its parent node_modules
+460 warn prefer global coffee-script@1.10.0 should be installed with -g
+461 verbose linkBins coffee-script@1.10.0
+462 verbose link bins [ { coffee: './bin/coffee', cake: './bin/cake' },
+462 verbose link bins   '/vagrant/node_modules/.bin',
+462 verbose link bins   false ]
+463 verbose linkMans coffee-script@1.10.0
+464 verbose unlock done using /home/vagrant/.npm/_locks/staging-db29c5a769436947.lock for /vagrant/node_modules/.staging
+465 silly rollbackFailedOptional Starting
+466 silly rollbackFailedOptional Finishing
+467 silly runTopLevelLifecycles Finishing
+468 silly install printInstalled
+469 warn optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.0.0 (node_modules/chokidar/node_modules/fsevents):
+470 warn notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.1.1: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+471 verbose notsup SKIPPING OPTIONAL DEPENDENCY: Valid OS:    darwin
+471 verbose notsup SKIPPING OPTIONAL DEPENDENCY: Valid Arch:  any
+471 verbose notsup SKIPPING OPTIONAL DEPENDENCY: Actual OS:   linux
+471 verbose notsup SKIPPING OPTIONAL DEPENDENCY: Actual Arch: x64
+472 verbose stack Error: ENOENT: no such file or directory, chmod '/vagrant/node_modules/coffee-script/bin/cake'
+472 verbose stack     at Error (native)
+473 verbose cwd /vagrant
+474 error Linux 3.13.0-112-generic
+475 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install"
+476 error node v6.10.0
+477 error npm  v3.10.10
+478 error path /vagrant/node_modules/coffee-script/bin/cake
+479 error code ENOENT
+480 error errno -2
+481 error syscall chmod
+482 error enoent ENOENT: no such file or directory, chmod '/vagrant/node_modules/coffee-script/bin/cake'
+483 error enoent ENOENT: no such file or directory, chmod '/vagrant/node_modules/coffee-script/bin/cake'
+483 error enoent This is most likely not a problem with npm itself
+483 error enoent and is related to npm not being able to find a file.
+484 verbose exit [ -2, true ]

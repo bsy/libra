@@ -1,0 +1,6 @@
+<h2>
+  Results for <%= @result.url %>
+</h2>
+<div class="panel panel-default" id="page" data-page-id="<%= @result.id %>">
+  <%= render "page.html", result: @result %>
+</div>

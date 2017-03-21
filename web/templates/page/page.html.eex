@@ -1,0 +1,61 @@
+<div class="panel-heading">
+  <h3 class="panel-title">
+    Results
+  </h3>
+</div>
+<div class="panel-body">
+  <b>Page body size</b>: <%= @result.page_size |> format_size %>
+  <br/>
+  <b>Total size</b>: <%= @result.total_size |> format_size %>
+  <h4>Stylesheets</h4>
+  <table class="table stylesheets">
+    <thead>
+      <tr>
+        <th>
+          Url
+        </th>
+        <th>
+          Status
+        </th>
+        <th>
+          Size
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <%= for stylesheet <- @result.stylesheets do %>
+        <tr>
+          <td><%= stylesheet.url %></td>
+          <td><%= stylesheet.status %></td>
+          <td><%= stylesheet.size |> format_size %></td>
+        </tr>
+        <%= end %>
+    </tbody>
+  </table>
+  <h4>Scripts</h4>
+  <table class="table scripts">
+    <thead>
+      <tr>
+        <th>
+          Url
+        </th>
+        <th>
+          Status
+        </th>
+        <th>
+          Size
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <%= for script <- @result.scripts do %>
+      </tbody>
+        <tr>
+          <td><%= script.url %></td>
+          <td><%= script.status %></td>
+          <td><%= script.size |> format_size %></td>
+        </tr>
+        <%= end %>
+    </tbody>
+  </table>
+</div>

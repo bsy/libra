@@ -1,0 +1,8 @@
+<h1>Inspect a new page</h1>
+<%= form_tag("/pages") do %>
+  <div class="form-group">
+    <label for="page_url">Page url</label>
+    <input type="url" name="page_url" class="form-control" id="page_url" placeholder="Url to inspect, e.g. http://github.com">
+  </div>
+  <button type="submit" class="btn btn-default">Start!</button>
+<%= end %>
